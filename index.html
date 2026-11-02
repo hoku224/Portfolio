@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lam Man Ho (Hoku) | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Lam Man Ho (Hoku)</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="reveal">
+        <div class="container">
+            <h1>Hi, I'm Lam Man Ho (Hoku)</h1>
+            <p class="subtitle">I build <span id="typewriter"></span><span class="cursor">|</span></p>
+        </div>
+    </header>
+
+    <!-- About & Skills (Blog Style) -->
+    <section id="about" class="text-section reveal">
+        <div class="container text-block">
+            <h2>About Me & Skills</h2>
+            <p>I am a passionate developer and designer dedicated to crafting immersive digital experiences. My journey spans across various disciplines, allowing me to bridge the gap between aesthetic design and robust engineering.</p>
+            <h3>Core Competencies</h3>
+            <ul>
+                <li><strong>Interactive Web Development:</strong> Responsive layouts, project galleries, modal workflows, and structured content presentation.</li>
+                <li><strong>Mobile App Development:</strong> Cross-platform UI design and prototype delivery with Flutter.</li>
+                <li><strong>Game & 3D Development:</strong> Unity/C# gameplay scripting, scene composition, animation, and environment building.</li>
+                <li><strong>Production Workflow:</strong> Asset organization, deployment planning, documentation, and presentation-ready delivery.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education & Awards (Blog Style) -->
+    <section id="resume" class="text-section reveal">
+        <div class="container text-block">
+            <h2>Education & Awards</h2>
+            <div class="resume-item">
+                <h3>Academic Excellence</h3>
+                <p>Achieved a <strong>CGPA of 4.1</strong>, received the <strong>Sir Robert Trust Fund</strong> for my <strong>2024-2025 DAE study</strong>, and demonstrated English proficiency with an <strong>IELTS score of 7.0</strong>.</p>
+            </div>
+            <div class="resume-item">
+                <h3>AInsane Hackathon 2026</h3>
+                <p>Architected and deployed a comprehensive 200-concurrent-user solution for the Star Ferry Digital Museum. Developed a robust deployment strategy encompassing edge servers, high-density Wi-Fi, and AI Agent integration, showcasing enterprise-level system design capabilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="reveal">
+        <div class="container">
+            <h2>Selected Works</h2>
+            <div class="grid" id="portfolio-grid"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="container text-block">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            <div class="contact-boxes">
+                <div class="contact-box">
+                    <strong>Email:</strong> <a href="mailto:manlam0224@gmail.com">manlam0224@gmail.com</a>
+                </div>
+                <div class="contact-box">
+                    <strong>GitHub:</strong> <a href="https://github.com/hoku224" target="_blank" rel="noopener noreferrer">github.com/hoku224</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Lam Man Ho (Hoku). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top">↑</button>
+
+    <!-- Project Modal (Split Layout) -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-left">
+                <div class="modal-carousel-toolbar">
+                    <div class="modal-carousel-copy">
+                        <p class="carousel-hint">Use the arrows below, or swipe/drag the gallery to browse.</p>
+                        <p class="carousel-counter" id="modal-gallery-counter">0 / 0</p>
+                    </div>
+                    <div class="carousel-controls">
+                        <button type="button" id="modal-gallery-prev" class="carousel-btn" aria-label="Previous media">←</button>
+                        <button type="button" id="modal-gallery-next" class="carousel-btn" aria-label="Next media">→</button>
+                    </div>
+                </div>
+                <div class="media-gallery" id="modal-gallery">
+                    <!-- Images/Videos injected here -->
+                </div>
+            </div>
+            <div class="modal-right">
+                <h2 id="modal-title">Project Title</h2>
+                <p id="modal-tags" class="card-tags"></p>
+                <p id="modal-desc">Project description...</p>
+                <div id="modal-downloads-section" class="downloads-section" hidden>
+                    <h3>Documents</h3>
+                    <div id="modal-downloads" class="download-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="projects-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
