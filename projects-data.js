@@ -290,9 +290,15 @@ window.portfolioProjects = [
     "title": "System Administration",
     "description": "A system administration project covering automation, deployment, and team presentation deliverables.",
     "tags": "#SystemAdmin #Automation #Presentation",
-    "thumb": "./assets/projects/System Administration/Project_g4.mp4",
+    "thumb": {
+      "type": "video",
+      "url": "https://drive.google.com/uc?export=download&id=1QGalWbdg7Rqi3yRzLpIhnGTN70GLfeRh"
+    },
     "media": [
-      "./assets/projects/System Administration/Project_g4.mp4"
+      {
+        "type": "video",
+        "url": "https://drive.google.com/uc?export=download&id=1QGalWbdg7Rqi3yRzLpIhnGTN70GLfeRh"
+      }
     ],
     "downloads": [
       {
@@ -314,4 +320,5 @@ window.portfolioProjects = [
     ]
   }
 ];
+
 
