@@ -36,12 +36,12 @@ window.portfolioProjects = [
     "tags": "#Animation #3D #Presentation",
     "thumb": {
       "type": "video",
-      "url": "https://drive.google.com/uc?export=download&id=1QGalWbdg7Rqi3yRzLpIhnGTN70GLfeRh"
+      "url": "./assets/projects/3D Animatiion - Alien Invade/MainAnimation.mp4"
     },
     "media": [
       {
         "type": "video",
-        "url": "https://drive.google.com/uc?export=download&id=1QGalWbdg7Rqi3yRzLpIhnGTN70GLfeRh"
+        "url": "./assets/projects/3D Animatiion - Alien Invade/MainAnimation.mp4"
       }
     ],
     "downloads": [
@@ -292,12 +292,12 @@ window.portfolioProjects = [
     "tags": "#SystemAdmin #Automation #Presentation",
     "thumb": {
       "type": "video",
-      "url": "https://drive.google.com/uc?export=download&id=1QGalWbdg7Rqi3yRzLpIhnGTN70GLfeRh"
+      "url": "./assets/projects/System Administration/Project_g4.mp4"
     },
     "media": [
       {
         "type": "video",
-        "url": "https://drive.google.com/uc?export=download&id=1QGalWbdg7Rqi3yRzLpIhnGTN70GLfeRh"
+        "url": "./assets/projects/System Administration/Project_g4.mp4"
       }
     ],
     "downloads": [
@@ -320,6 +320,11 @@ window.portfolioProjects = [
     ]
   }
 ];
+
+
+
+
+
 
 
 
