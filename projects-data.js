@@ -36,12 +36,12 @@ window.portfolioProjects = [
     "tags": "#Animation #3D #Presentation",
     "thumb": {
       "type": "video",
-      "url": "./assets/projects/3D Animatiion - Alien Invade/MainAnimation.mp4"
+      "url": "https://drive.google.com/file/d/119-ROfF86y9UanwiuZ2E-1qa0G_8iahs/view?usp=sharing"
     },
     "media": [
       {
         "type": "video",
-        "url": "./assets/projects/3D Animatiion - Alien Invade/MainAnimation.mp4"
+        "url": "https://drive.google.com/file/d/119-ROfF86y9UanwiuZ2E-1qa0G_8iahs/view?usp=sharing"
       }
     ],
     "downloads": [
