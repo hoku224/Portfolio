@@ -10,14 +10,38 @@ function escapeHtml(value = '') {
         .replace(/'/g, '&#39;');
 }
 
-function isVideoUrl(url = '') {
-    return /\.(mp4|webm|mov)$/i.test(url);
+function getMediaSource(entry) {
+    if (entry && typeof entry === 'object') {
+        const url = entry.url || entry.src || '';
+        const type = entry.type || entry.kind || (isVideoUrl(url) ? 'video' : 'image');
+        return { url, type };
+    }
+
+    const url = String(entry || '');
+    return { url, type: isVideoUrl(url) ? 'video' : 'image' };
 }
 
-function renderMediaMarkup(url, className, options = {}) {
+function isVideoUrl(url = '') {
+    const value = String(url).trim();
+    if (!value) {
+        return false;
+    }
+
+    let pathname = value;
+    try {
+        pathname = new URL(value, window.location.href).pathname;
+    } catch (_) {
+        pathname = value.split(/[?#]/, 1)[0];
+    }
+
+    return /\.(mp4|webm|mov|m4v)$/i.test(pathname);
+}
+
+function renderMediaMarkup(entry, className, options = {}) {
     const { autoplay = true } = options;
+    const { url, type } = getMediaSource(entry);
     const safeUrl = encodeURI(url);
-    if (isVideoUrl(url)) {
+    if (type === 'video') {
         const autoplayAttr = autoplay ? 'autoplay ' : '';
         return `<video src="${safeUrl}" ${autoplayAttr}muted loop playsinline preload="metadata" class="${className}"></video>`;
     }
@@ -242,3 +266,5 @@ function openModal(project) {
     
     document.getElementById("project-modal").style.display = "flex";
 }
+
+

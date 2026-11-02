@@ -34,9 +34,15 @@ window.portfolioProjects = [
     "title": "3D Animatiion - Alien Invade",
     "description": "A 3D animation project built around an alien invasion theme, with proposal and presentation materials included.",
     "tags": "#Animation #3D #Presentation",
-    "thumb": "./assets/projects/3D Animatiion - Alien Invade/MainAnimation.mp4",
+    "thumb": {
+      "type": "video",
+      "url": "https://drive.google.com/uc?export=download&id=1QGalWbdg7Rqi3yRzLpIhnGTN70GLfeRh"
+    },
     "media": [
-      "./assets/projects/3D Animatiion - Alien Invade/MainAnimation.mp4"
+      {
+        "type": "video",
+        "url": "https://drive.google.com/uc?export=download&id=1QGalWbdg7Rqi3yRzLpIhnGTN70GLfeRh"
+      }
     ],
     "downloads": [
       {
@@ -149,7 +155,10 @@ window.portfolioProjects = [
     "tags": "#GameDev #RPG #Unity",
     "thumb": "./assets/projects/3D RPG - Blade of the Chosen/Progress/6fb311f9-51cf-4701-ab60-5b5c4b447dea.jpg",
     "media": [
-      "./assets/projects/3D RPG - Blade of the Chosen/demonstrateVideo1.mp4",
+      {
+        "type": "video",
+        "url": "https://drive.google.com/uc?export=download&id=1AUN0-UKulBYA8Bf667EzM4TElhHYyWKr"
+      },
       "./assets/projects/3D RPG - Blade of the Chosen/Progress/6fb311f9-51cf-4701-ab60-5b5c4b447dea.jpg",
       "./assets/projects/3D RPG - Blade of the Chosen/Progress/Hey3.png",
       "./assets/projects/3D RPG - Blade of the Chosen/Progress/螢幕擷取畫面 2025-04-26 092933.png",
@@ -167,7 +176,10 @@ window.portfolioProjects = [
       "./assets/projects/3D RPG - Blade of the Chosen/Progress/螢幕擷取畫面 2025-04-30 233622.png",
       "./assets/projects/3D RPG - Blade of the Chosen/Progress/錄製內容 2025-04-03 124002.mp4",
       "./assets/projects/3D RPG - Blade of the Chosen/Progress/錄製內容 2025-04-29 120217.mp4",
-      "./assets/projects/3D RPG - Blade of the Chosen/Progress/錄製內容 2025-05-02 054030.mp4"
+      {
+        "type": "video",
+        "url": "https://drive.google.com/uc?export=download&id=1vHHuiU-78q6GTdTL2NGk1cbLqTwIhkNl"
+      }
     ],
     "downloads": [
       {
@@ -185,9 +197,15 @@ window.portfolioProjects = [
     "title": "3D Runner Boss Scene",
     "description": "A boss encounter scene designed for an endless-runner style game environment.",
     "tags": "#GameDev #SceneDesign #Unity",
-    "thumb": "./assets/projects/3D Runner Boss Scene/demonstrateVideo1.mp4",
+    "thumb": {
+      "type": "video",
+      "url": "https://drive.google.com/uc?export=download&id=1saBtTEfz6Dgju5HMUFr4bOPMPZD6ZsE0"
+    },
     "media": [
-      "./assets/projects/3D Runner Boss Scene/demonstrateVideo1.mp4"
+      {
+        "type": "video",
+        "url": "https://drive.google.com/uc?export=download&id=1saBtTEfz6Dgju5HMUFr4bOPMPZD6ZsE0"
+      }
     ],
     "downloads": []
   },
@@ -196,9 +214,15 @@ window.portfolioProjects = [
     "title": "Full Fledge Online Restaurant Website - Embers",
     "description": "A full-stack restaurant website project with UI assets, demos, reports, and presentation materials.",
     "tags": "#WebDev #FullStack #UI",
-    "thumb": "./assets/projects/Full Fledge Online Restaurant Website - Embers/demonstration.mp4",
+    "thumb": {
+      "type": "video",
+      "url": "https://drive.google.com/uc?export=download&id=1E93wRciInu5gqrxZ_wXU8VhaHfTIKkXV"
+    },
     "media": [
-      "./assets/projects/Full Fledge Online Restaurant Website - Embers/demonstration.mp4",
+      {
+        "type": "video",
+        "url": "https://drive.google.com/uc?export=download&id=1E93wRciInu5gqrxZ_wXU8VhaHfTIKkXV"
+      },
       "./assets/projects/Full Fledge Online Restaurant Website - Embers/Presentation.mp4",
       "./assets/projects/Full Fledge Online Restaurant Website - Embers/www/embers/public/assets/images/aboutLeft.png",
       "./assets/projects/Full Fledge Online Restaurant Website - Embers/www/embers/public/assets/images/aboutRight.png",
@@ -244,20 +268,11 @@ window.portfolioProjects = [
     "title": "Hackathon - Star Ferry",
     "description": "A hackathon project presenting a Star Ferry digital museum concept, deployment planning, and demo assets.",
     "tags": "#Hackathon #WebDev #Deployment",
-    "thumb": "./assets/projects/Hackathon - Star Ferry/FerryProjectDemo/museum-demo/public/museum-demo/harbour-1950s-reconstruction.png",
+    "thumb": "./assets/projects/Hackathon - Star Ferry/reward.jpeg",
     "media": [
-      "./assets/projects/Hackathon - Star Ferry/FerryProjectDemo/museum-demo/public/museum-demo/harbour-1950s-reconstruction.png",
-      "./assets/projects/Hackathon - Star Ferry/FerryProjectDemo/museum-demo/public/museum-demo/harbour-1950s-reconstruction.webp",
-      "./assets/projects/Hackathon - Star Ferry/FerryProjectDemo/museum-demo/public/museum-demo/star-ferry-chibi-loader.webp",
-      "./assets/projects/Hackathon - Star Ferry/螢幕擷取畫面 2026-10-30 101922.png",
-      "./assets/projects/Hackathon - Star Ferry/螢幕擷取畫面 2026-10-30 102142.png"
+      "./assets/projects/Hackathon - Star Ferry/reward.jpeg"
     ],
-    "downloads": [
-      {
-        "label": "project-ppts-1.pptx",
-        "url": "./assets/projects/Hackathon - Star Ferry/project-ppts-1.pptx"
-      }
-    ]
+    "downloads": []
   },
   {
     "id": 12,
@@ -299,3 +314,4 @@ window.portfolioProjects = [
     ]
   }
 ];
+
