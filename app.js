@@ -21,6 +21,10 @@ function getMediaSource(entry) {
     return { url, type: isVideoUrl(url) ? 'video' : 'image' };
 }
 
+function isDriveUrl(url = '') {
+    return /(^|\/)drive\.google\.com\//i.test(String(url));
+}
+
 function isVideoUrl(url = '') {
     const value = String(url).trim();
     if (!value) {
@@ -37,11 +41,24 @@ function isVideoUrl(url = '') {
     return /\.(mp4|webm|mov|m4v)$/i.test(pathname);
 }
 
+function getDrivePreviewUrl(url = '') {
+    const value = String(url);
+    const idMatch = value.match(/\/file\/d\/([^/]+)/i) || value.match(/[?&]id=([^&]+)/i);
+    if (!idMatch) {
+        return value;
+    }
+    return `https://drive.google.com/file/d/${idMatch[1]}/preview`;
+}
+
 function renderMediaMarkup(entry, className, options = {}) {
     const { autoplay = true } = options;
     const { url, type } = getMediaSource(entry);
     const safeUrl = encodeURI(url);
     if (type === 'video') {
+        if (isDriveUrl(url)) {
+            const previewUrl = encodeURI(getDrivePreviewUrl(url));
+            return `<iframe src="${previewUrl}" class="${className}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="no-referrer"></iframe>`;
+        }
         const autoplayAttr = autoplay ? 'autoplay ' : '';
         return `<video src="${safeUrl}" ${autoplayAttr}muted loop playsinline preload="metadata" class="${className}"></video>`;
     }
@@ -266,5 +283,6 @@ function openModal(project) {
     
     document.getElementById("project-modal").style.display = "flex";
 }
+
 
 
