@@ -268,9 +268,9 @@ window.portfolioProjects = [
     "title": "Hackathon - Star Ferry",
     "description": "A hackathon project presenting a Star Ferry digital museum concept, deployment planning, and demo assets.",
     "tags": "#Hackathon #WebDev #Deployment",
-    "thumb": "./assets/projects/Hackathon - Star Ferry/reward.jpeg",
+    "thumb": "./assets/projects/Hackathon - Star Ferry/reward.png",
     "media": [
-      "./assets/projects/Hackathon - Star Ferry/reward.jpeg"
+      "./assets/projects/Hackathon - Star Ferry/reward.png"
     ],
     "downloads": []
   },
@@ -320,5 +320,6 @@ window.portfolioProjects = [
     ]
   }
 ];
+
 
 
